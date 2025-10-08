@@ -10,7 +10,7 @@ class Client(models.Model):
         verbose_name = 'Клиент'
 
     def __str__(self):
-        return f"{self.surname} {self.name}" 
+        return f"{self.nickname}" 
     
 class Event(models.Model):
     name =  models.CharField("Название", max_length=100)
@@ -44,7 +44,6 @@ class Order(models.Model):
     adress = models.CharField("Адрес")
     payment_method = models.CharField("Метод оплаты", max_length=50)
     client_id = models.ForeignKey(Client, on_delete=models.CASCADE)
-    event_id = models.ForeignKey(Event, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name_plural = "Заказы"    
