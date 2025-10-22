@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/style.css">
     <title>{%block tab_header%}{%endblock%}</title>
 </head>
 <body>
-    <header>dfdfd</header>
+
+    <header class="header">
+    <div class="header-content">
+        <img src="/static/media/logo.png" alt="logo" class="logo">
+    </div>
+    </header>
     <main>
-        {%block all%}
+        {%block main%}
         {%endblock%}
     </main>
-    <footer>...</footer>
+    <footer></footer>
 </body>
 </html>
