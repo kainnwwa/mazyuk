@@ -49,8 +49,14 @@ body{
     background-color: black;
 }
 .merch{
-    display: flex;
     display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 50px auto; 
+    padding: 0 20px; /
+
 
 }
 .text{
@@ -74,4 +80,84 @@ body{
     border-color: red;
     border-style: solid;
 
+}
+
+.button{
+    background-color: #00000000;
+    color: #ffffff;
+    border: 3px ;
+    border-color: aliceblue;
+    border-style: solid;
+    padding: 15px 30px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.contein{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.tipav{
+   display: flex;
+   align-items: center; 
+}
+
+.merch2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 50px auto; 
+    padding: 0 20px;
+}
+
+.text2{
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.main-image{
+    object-fit: cover;
+}
+
+.ovelay-image{
+    position: absolute;
+    width: 72px; 
+    height: 22px;
+}
+
+.button2{
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipospoty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: ;
+}
+
+.contein2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+}
+
+.textt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
 }
