@@ -49,24 +49,29 @@ body{
     background-color: black;
 }
 .merch{
-    margin: 20px;
     display: flex;
-    justify-content: space-between;
+    display: grid;
+
 }
-.p1{
-    font-weight: bold;
-    color: aliceblue
-    ;
-}
-.p2{
+.text{
     font-weight: bold;
     color: aliceblue;
 }
-.p3{
-    font-weight: bold;
-    color: aliceblue;
+
+.fwo img {
+    width: 360px;
+    height: 372px;
+    border: 5px ;
+    border-color: red;
+    border-style: solid ;
 }
-.p4{
-    font-weight: bold;
-    color: aliceblue;
+
+
+.fwo2 img{
+    width: 336px;
+    height: 338px;
+    border: 5px;
+    border-color: red;
+    border-style: solid;
+
 }

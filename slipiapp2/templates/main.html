@@ -8,40 +8,21 @@
 </head>
 <body>
      <header class="header">
-    <div class="header-content">
-        <img src="/static/media/logo.png" alt="logo" class="logo">
-    <div class="shtuchki">
-        <img src="../static/media/SVG (1).png" alt="тележка" class="firts">
-        <img src="../static/media/Vector.png" alt="человечек" class="second">
-        <img src="../static/media/SVG.png" alt="лупа" class="third">
-    </div>
-    </div>
-    <video autoplay muted loop>
-    <source src="../static/media/60992e8848534717aa6d95d5354e93cf.mp4" type="video/mp4" class="video"></video>
-    </header>
-    <main class="main">
-          <div class="merch">
-                <div class="1f">
-                    <img src="../static/media/1.png" alt="лот1">
-                    <p class="p1">SLIPKNOT 2LP (25TH ANNYVERSARY EDITION)</p>
-                </div>
-                <div class="2f">
-                    <img src="../static/media/2.png" alt="лот2">
-                    <p class="p2">SLIPKNOT 2CD (25TH ANNYVERSARY EDITION)</p>
-                </div>
-                <div class="3f">
-                    <img src="../static/media/3.png" alt="лот3">
-                    <p class="p3">SLIPKNOT (25TH ANNIVERSARY EDITION) CITRUS LP</p>
-                </div>
-                <div class="4f">
-                    <img src="../static/media/4.png" alt="лот4">
-                    <p class="p4">Slipknot 6LP (25th Anniversary BloodSplatter Box Set)</p>
-                </div>
-
-
-
-          </div>      
-    </main>
+        <div class="header-content">
+            <img src="/static/media/logo.png" alt="logo" class="logo">
+            <div class="shtuchki">
+                <img src="../static/media/SVG (1).png" alt="тележка" class="firts">
+                <img src="../static/media/Vector.png" alt="человечек" class="second">
+                <img src="../static/media/SVG.png" alt="лупа" class="third">
+            </div>
+        </div>
+        <video autoplay muted loop>
+        <source src="../static/media/60992e8848534717aa6d95d5354e93cf.mp4" type="video/mp4" class="video"></video>
+        </header>
+<main>
+    {%block main%}
+    {%endblock%}        
+</main>
     <footer></footer>
 </body>
 </html>
