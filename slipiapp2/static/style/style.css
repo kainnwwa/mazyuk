@@ -92,6 +92,7 @@ body{
     font-weight: bold;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
 .contein{
@@ -138,6 +139,10 @@ body{
     font-weight: bold;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
+    width: 210px;
+    height: 80px;
+    font-size: 25px;
 }
 
 .tipospoty{
@@ -145,7 +150,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 50vh;
-    width: ;
 }
 
 .contein2{
@@ -160,4 +164,96 @@ body{
     justify-content: center;
     align-items: center;
     height: 20vh;
+}
+
+.SHOPBY{
+    text-align: center;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+}
+
+.redligh{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+    padding: 15px;
+    margin: 50px auto;
+}
+
+
+.redone{
+   position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+.image-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.photoall{
+    object-fit: cover;
+    margin-top: 10spx;
+
+}
+
+.hr{
+    border: none; 
+    height: 1px;
+    background: white;
+     margin: 20px 0;
+}
+
+.button21{
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 240px;
+    height: 90px;
+    font-size: 25px;
+}
+
+
+.almost{
+  text-align: center;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+}
+
+.last{
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(5, auto); 
+    grid-template-rows: 1fr;
+    gap: 5px;
+    padding: 50px;
+    text-align: center;
+
 }
