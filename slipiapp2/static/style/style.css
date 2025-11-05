@@ -9,6 +9,11 @@ body{
     background-color: black;
 
 }
+.videoofirst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .header-content{
     display: flex;
@@ -103,8 +108,9 @@ body{
 }
 
 .tipav{
-   display: flex;
-   align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .merch2{
@@ -209,6 +215,9 @@ body{
 .photoall{
     object-fit: cover;
     margin-top: 10spx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
