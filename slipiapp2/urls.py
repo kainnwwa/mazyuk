@@ -3,5 +3,5 @@ from django.urls import path
 
 urlpatterns = [
     path('', views.online),
-    path('page', views.page)
+    path('page.html', views.page)
 ]

@@ -61,8 +61,6 @@ body{
     max-width: 1200px;
     margin: 50px auto; 
     padding: 0 20px; /
-
-
 }
 .text{
     font-weight: bold;
@@ -76,7 +74,6 @@ body{
     border-color: red;
     border-style: solid ;
 }
-
 
 .fwo2 img{
     width: 336px;
