@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: #000;
 }
 
 .header{
@@ -53,7 +53,7 @@ body{
     height: 38 px;
 }
 .main{
-    background-color: black;
+    background-color: #000;
 }
 .merch{
     display: grid;
@@ -267,7 +267,14 @@ body{
 
 }
 .mainpage{
-    background-color: #000;
+    background-image:url(../media/back.jpg);
+    background-size: cover;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
 }
 
 .pocherkivanie{
@@ -286,7 +293,7 @@ body{
 
 .stroka{
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 10px;
     font-family: Arial, sans-serif; 
     
@@ -308,6 +315,10 @@ body{
     float: left;
     gap: 10px;
     width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
 }
 
 .button22{
@@ -320,7 +331,7 @@ body{
     font-size: 13px;
 }
 
-.textlink{
+.textlink .a{
     color: red;
     padding: 10px 20px;          
     border-radius: 5px;          
@@ -336,22 +347,132 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 607px;
-    height: 607px;
+    padding: 15px 20px;
 }
 
 .product_name{
     color: #ffffff;
-    font-size: large;
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    justify-content: center;
-    border-radius: 8px;
-    font-size: 25px;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1px;
     font-family: Arial, sans-serif;
-    width: 520px;
-    height: 104px;
+    margin: 0;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
-    
+.text_sboky{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20xp;
+    padding: 15px 20px;
+
+}
+ 
+.price{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.option-group {
+     margin-bottom: 25px;
+     color: white;
+     font-size: 30px;
+
+ }
+       
+        
+.option-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 26px;
+    border: #ffffff;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+}
+
+.size-input {
+    display: none;
+    color: #ffffff;
+}
+
+.size-options {
+     flex-wrap: wrap;
+     
+}
+
+.add-to-cart:hover {
+    background-color: greenyellow;
+}
+
+.shipping-info {
+    padding: 0px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+ }
+
+.shipping-label {
+     font-weight: bold;
+     margin-bottom: 5px;
+     color: #ffffff;
+     font-size: 20px;
+}
+
+.shipping-date {
+    color: #ffffff;
+}
+
+.product-description {
+    line-height: 1.8;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.size-option {
+    background-color: #000000;
+    color: white;
+    border-color: #ffffff;
+    border-width: 3px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 26px;
+    border: #ffffff;
+}
+
+.quantity-input {
+    width: 58px;
+    height: 42px;
+    text-align: center;
+    border: 1px solid #f41818;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+.product-form {
+    margin-bottom: 20px;
+}
+
