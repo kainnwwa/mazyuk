@@ -336,9 +336,7 @@ body{
     padding: 10px 20px;          
     border-radius: 5px;          
     font-size: 16px;        
-    cursor: pointer;             
-    transition: all 0.8s ease;
-    border: 5px;
+    text-decoration: none;
 }
 
 
@@ -476,3 +474,200 @@ body{
     margin-bottom: 20px;
 }
 
+.footerrr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+ .account-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+ }
+
+.account-header {
+    background: #b40000;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    }
+
+.account-header h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    }
+
+.client-id {
+    background: rgba(255, 255, 255, 0.36);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-top: 10px;
+        }
+
+.account-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+}
+
+.profile-section {
+    background: #ffffffd7;
+    padding: 30px;
+    border-right: 4px solid #ff0000;
+    }
+
+.profile-info {
+    margin-bottom: 30px;}
+
+ .info-group {
+    margin-bottom: 20px;}
+
+.orders-section {
+    padding: 30px;
+        }
+
+.section-title {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+        }
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+ }
+
+.payment-section {
+    background: #f8f9fa;
+    padding: 25px;
+ }
+.payment-icon {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+        }
+.payment-details {
+     flex: 1;}
+
+.payment-type {
+    font-weight: bold;
+    color: #ff0000;}
+
+.payment-info {
+    color: #6c757d;
+    font-size: 0.9em;}
+
+.address-section {
+    margin-top: 20px;}
+
+.address-card {
+    background: rgba(255, 0, 0, 0.218);
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+    margin-top: 10px;
+        }
+
+.order-card {
+    background: white;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+.order-header {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    margin-bottom: 15px;
+        }
+.order-id {
+    font-weight: bold;
+    color: #ff0000;
+        }
+        
+.order-date {
+color: #6c757d; }
+
+.order-status {
+    background: #28a745;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8em;
+ }
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+        }
+.order-items {
+    margin-bottom: 15px; }
+
+.item-name {
+    color: black;
+        }
+
+.item-quantity {
+color: #6c757d;}
+ .item-price {
+    color: black;
+    font-weight: bold;
+        }
+
+.order-total {
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff0000;
+    padding-top: 10px;
+    border-top: 2px solid #e9ecef;
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(226, 25, 25, 0.1);
+}
+ .total-amount {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 15px;
+        }
+
+        .amount-label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .amount-value {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .account-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-section {
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+        }

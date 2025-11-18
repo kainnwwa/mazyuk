@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style/style.css">
+    <title>Account</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+             <img src="../static/media/logo.png" alt=">" class="logo">
+            <div class="shtuchki">
+                <img src="../static/media/SVG (1).png" alt="тележка" class="firts">
+                <img src="../static/media/Vector.png" alt="человечек" class="second">
+                <img src="../static/media/SVG.png" alt="лупа" class="third">
+            </div>
+        </div>
+    </header>
+    <mainacc class="mainpage">
+        <div class="account-container">
+        <div class="account-header">
+            <h1>My Account</h1>
+            <div class="client-id">Client ID: #CL-789123</div>
+        </div>
+
+        <div class="account-content">
+        <div class="profile-section">
+                <div class="profile-info">
+                    <h2 class="section-title">Profile Information</h2>
+                    
+                    <div class="info-group">
+                        <p>Nickname:</p>
+                        <p>{{ Client.nickname }}</p>
+                    </div>
+                    <div class="info-group">
+                        <p>Email:</p>
+                        <p>{{ Client.email }}</p>
+                    </div>
+                    <div class="info-group">
+                        <p>Phone Number:</p>
+                        <p>{{ Client.phone_number }}</p>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h2 class="section-title">Payment Method</h2>
+                    <div class="payment-method">
+                        <div class="payment-icon">CC</div>
+                        <div class="payment-details">
+                            <div class="payment-type">Credit Card</div>
+                            <div class="payment-info">**** **** **** 4242</div>
+                        </div>
+                    </div>
+                </div>
+
+        <div class="address-section">
+        <h2 class="section-title">Shipping Address</h2>
+        <div class="address-card">
+            <strong>John Smith</strong><br>
+            123 Hockey Street<br>
+            Suite 456<br>
+            Toronto, ON M5V 2T6<br>
+            Canada
+        </div>
+        </div>
+        </div>
+
+            <div class="orders-section">
+             <h2 class="section-title">Order History</h2>
+                <div class="order-card">
+                    <div class="order-header">
+                        <div class="order-id">Order #ORD-001</div>
+                        <div class="order-date">Nov 15, 2024</div>
+                        <div class="order-status">Delivered</div>
+                    </div>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <span class="item-name">9 Point Star Hockey Jersey</span>
+                            <span class="item-quantity">Qty: 1</span>
+                            <span class="item-price">$125.00</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="item-name">Hockey Stick</span>
+                            <span class="item-quantity">Qty: 2</span>
+                            <span class="item-price">$89.00</span>
+                        </div>
+                    </div>
+                    <div class="order-total">Total: $303.00</div>
+                </div>
+
+                <div class="order-card">
+                    <div class="order-header">
+                        <div class="order-id">Order #ORD-002</div>
+                        <div class="order-date">Dec 3, 2024</div>
+                        <div class="order-status">Processing</div>
+                    </div>
+                    <div class="order-items">
+                        <div class="order-item">
+                            <span class="item-name">Team Hockey Socks</span>
+                            <span class="item-quantity">Qty: 3</span>
+                            <span class="item-price">$24.99</span>
+                        </div>
+                        <div class="order-item">
+                            <span class="item-name">Hockey Gloves</span>
+                            <span class="item-quantity">Qty: 1</span>
+                            <span class="item-price">$75.00</span>
+                        </div>
+                    </div>
+                    <div class="order-total">Total: $149.97</div>
+                </div>
+
+                <div class="total-amount">
+                    <div class="amount-label">Total Amount Due</div>
+                    <div class="amount-value">$149.97</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
