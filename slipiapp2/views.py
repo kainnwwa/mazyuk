@@ -10,12 +10,9 @@ def page(request):
 def accounts(request):
     return render(request, 'account.html')
 
-def client(request):
-    Client_nickname = chr(request.GET.get('nickname', 2))
-    
-    Client_from_db = Client.objects.all()[Client_nickname - 1]
+def accounts(request):
+    client_obj = Client.objects.get(id=5)
     
     return render(request, 'account.html', {
-        'Client': Client_from_db
+        'client': client_obj
     })
-    

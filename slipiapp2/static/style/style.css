@@ -483,7 +483,7 @@ body{
  .account-container {
     max-width: 1200px;
     margin: 0 auto;
-    background: white;
+    background: rgb(0, 0, 0);
     border-radius: 15px;
     overflow: hidden;
  }
@@ -516,7 +516,7 @@ body{
 }
 
 .profile-section {
-    background: #ffffffd7;
+    background-image: url(../media/ghotic\ back.png);
     padding: 30px;
     border-right: 4px solid #ff0000;
     }
@@ -525,7 +525,8 @@ body{
     margin-bottom: 30px;}
 
  .info-group {
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+    color: #ffffff;}
 
 .orders-section {
     padding: 30px;
@@ -533,7 +534,7 @@ body{
 
 .section-title {
     font-size: 2em;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
     padding-bottom: 10px;
         }
@@ -582,8 +583,7 @@ body{
         }
 
 .order-card {
-    background: white;
-    border: 1px solid #e9ecef;
+    background: rgb(46, 46, 46);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 15px;
@@ -605,14 +605,13 @@ body{
 color: #6c757d; }
 
 .order-status {
-    background: #28a745;
-    color: white;
+    background: #ff0000;
+    color: rgb(255, 255, 255);
     padding: 4px 12px;
     border-radius: 15px;
     font-size: 0.8em;
  }
 .order-item {
-    display: flex;
     justify-content: space-between;
     padding: 8px 0;
         }
@@ -620,14 +619,16 @@ color: #6c757d; }
     margin-bottom: 15px; }
 
 .item-name {
-    color: black;
+    color: rgb(255, 255, 255);
         }
 
 .item-quantity {
-color: #6c757d;}
+color: #ffffff;
+padding-left: 5px;}
  .item-price {
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bold;
+    padding-left: 80%;
         }
 
 .order-total {
@@ -635,8 +636,9 @@ color: #6c757d;}
     font-size: 1.2em;
     font-weight: bold;
     color: #ff0000;
-    padding-top: 10px;
-    border-top: 2px solid #e9ecef;
+    padding-top: 10px ;
+    padding-right: 70px;
+    /* border-top: 2px solid #e9ecef; */
 }
 
 .order-card:hover {
@@ -644,7 +646,7 @@ color: #6c757d;}
     box-shadow: 0 5px 15px rgba(226, 25, 25, 0.1);
 }
  .total-amount {
-    background: linear-gradient(135deg, #28a745, #20c997);
+    background: linear-gradient(135deg, #bd3737, #be4f1b);
     color: white;
     padding: 25px;
     text-align: center;
