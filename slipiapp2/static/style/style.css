@@ -534,7 +534,7 @@ body{
 
 .section-title {
     font-size: 2em;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
     margin-bottom: 20px;
     padding-bottom: 10px;
         }
@@ -546,13 +546,13 @@ body{
  }
 
 .payment-section {
-    background: #f8f9fa;
+    background: #000000;
     padding: 25px;
  }
 .payment-icon {
     width: 40px;
     height: 40px;
-    background: black;
+    background: rgb(255, 0, 0);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -565,7 +565,7 @@ body{
 
 .payment-type {
     font-weight: bold;
-    color: #ff0000;}
+    color: #ffffff;}
 
 .payment-info {
     color: #6c757d;
@@ -575,11 +575,11 @@ body{
     margin-top: 20px;}
 
 .address-card {
-    background: rgba(255, 0, 0, 0.218);
-    border: 1px solid #e9ecef;
+    background: rgb(0, 0, 0);
     border-radius: 6px;
     padding: 20px;
     margin-top: 10px;
+    color: #e9ecef;
         }
 
 .order-card {
