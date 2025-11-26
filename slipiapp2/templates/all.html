@@ -1,67 +1,40 @@
 {% extends "main.html" %}
 {%block main%}
 <div class="main">
-     <p class="SHOPBY">SHOP BY CATEGORY</p>
-
-    <div class="redligh">
-        <div class="redone">
-            <img src="../static/media/redligh1.png" alt="Music" style="width: 444px; height: 205px;">
-        </div>
-        <div class="redone">
-            <img src="../static/media/red.png" alt="BEST SELLERS" style="width: 444px; height: 205px;">
-            <div class="image-text">BEST SELLERS</div>
-        </div>
-        <div class="redone">
-            <img src="../static/media/red3.png" alt="SUMMER COLLECTION" style="width: 444px; height: 205px;">
-            <div class="image-text">SUMMER COLLECTION</div>
-        </div>
-        <div class="redone">
-            <img src="../static/media/red4.png" alt="LAST CHANCE" style="width: 444px; height: 205px;">
-            <div class="image-text">LAST CHANCE</div>
-        </div>
+    <select name="level" class="filter-select">
+                    <option value="">merch</option>
+                    <option value="lite" {% if level_filter == 'lite' %}selected{% endif %}>albums</option>
+                    <option value="medium" {% if level_filter == 'medium' %}selected{% endif %}>clothes</option>
+                    <option value="hard" {% if level_filter == 'hard' %}selected{% endif %}>accessories</option>
+                </select>
+     
+                <button type="submit" class="button">Применить</button>
+                <a href="?" class="reset-button">Сбросить</a>
+   <div class="merch">
+    {% for merchandise in Merchandises %}
+    <div class="fwo">
+        {% if merchandise.photo %}
+            <img src="{{ merchandise.photo.url }}" alt="{{ merchandise.name }}">
+        {% else %}
+            <img src="/static/images/placeholder.jpg" alt="Нет фото">
+        {% endif %}
+        <h3 class="nazvanya">{{ merchandise.name }}</h3>
+        <p class="text">{{ merchandise.cost }} $</p>
     </div>
-    <div class="merch">
-        <div class="fwo">
-            <img src="../static/media/1.png" alt="лот1">
-            <p class="text">SLIPKNOT 2LP (25TH ANNYVERSARY EDITION)</p>
-        </div>
-        <div class="fwo">
-            <img src="../static/media/3.png" alt="лот2">
-            <p class="text">SLIPKNOT 2CD (25TH ANNYVERSARY EDITION)</p>
-        </div>
-        <div class="fwo">
-            <img src="../static/media/4.png" alt="лот4">
-            <p class="text">SLIPKNOT 6LP (25TH ANNIVERSARY BLOODSPLATTER BOX SET)</p>
-        </div>
-                <div class="fwo2">
-                    <img src="../static/media/b2.png" alt="лот5">
-                    <p class="text">SELF TITLED FACES T-SHIRT</p>
-                </div>
-                <div class="fwo2">
-                    <img src="../static/media/b1.png" alt="лот7">
-                    <p class="text">SELF TITLED 25 YEARS T-SHIRT</p>
-                </div>
-                <div  class="fwo2">
-                    <img src="../static/media/b4.png" alt="лот8">
-                    <a href="page.html" POINT STAR HOCKEY JERSEY><p class="textlink">POINT STAR HOCKEY JERSEY</p></a>
-                </div>
-                <div class="fwo2">
-                    <img src="../static/media/f1.png" alt="лот9">
-                    <p class="text">SELF TITLED BUTTON PACK</p>
-                </div>
-                <div class="fwo2">
-                    <img src="../static/media/f3.png" alt="лот11">
-                    <p class="text">SLIPKNOT 1999 WALL FLAG</p>
-                </div>
-                <div class="fwo2">
-                    <img src="../static/media/f4.png" alt="лот12">
-                    <p class="text">SLIDE BELT</p> 
-                </div>
-          </div>    
+    {% empty %}
+    <div class="fwo">
+        <p>Товаров нет в базе данных</p>
+    </div>
+    {% endfor %}
+</div>
+         
           <div class="contein">
             <button class="button">
                 SHOP ALL 25TH ANNIVERSARY
             </button>
+
+    
+
           </div>
           <div class="tipav">
             <img src="../static/media/videotipa.png" alt="nadovideo">
@@ -85,16 +58,32 @@
         <button class="button21">
                 SHOP COLLECTION
             </button>
+
     </div>
     <div class="tipospoty">
         <img src="../static/media/music.png" alt="tipospoty">
     </div>
      <p class="SHOPBY">UNCOMING EVENTS</p>
 
-     <div class="contein2">
-        <button class="button2">
-                EXPLORE
-            </button>
+     
+        
+            <div class="redligh">
+        <div class="redone">
+            <img src="../static/media/redligh1.png" alt="Music" style="width: 444px; height: 205px;">
+        </div>
+        <div class="redone">
+            <img src="../static/media/red.png" alt="BEST SELLERS" style="width: 444px; height: 205px;">
+            <div class="image-text">BEST SELLERS</div>
+        </div>
+        <div class="redone">
+            <img src="../static/media/red3.png" alt="SUMMER COLLECTION" style="width: 444px; height: 205px;">
+            <div class="image-text">SUMMER COLLECTION</div>
+        </div>
+        <div class="redone">
+            <img src="../static/media/red4.png" alt="LAST CHANCE" style="width: 444px; height: 205px;">
+            <div class="image-text">LAST CHANCE</div>
+        </div>
+    </div>
      </div>
             <div class="photoall">
                  <img src="../static/media/Footer_SelfFooter-Self-Desktop.webp" alt="photoall">

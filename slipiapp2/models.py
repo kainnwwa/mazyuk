@@ -26,8 +26,8 @@ class Event(models.Model):
 
 class Merchandise(models.Model):
     name = models.CharField("Название", max_length=40)
-    photo = models.ImageField("Ссылка на фото")
-    size = models.CharField("Размер", max_length=10)
+    photo = models.ImageField("Ссылка на фото",  upload_to='merch/')
+    size = models.CharField("Размер", max_length=10, blank=True)
     cost = models.DecimalField("Цена", max_digits=10, decimal_places=2)
     quantity = models.IntegerField("Количество")
 

@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Client
+from .models import Merchandise
 
 def online(request):
     return render(request, 'all.html')
@@ -16,3 +17,6 @@ def accounts(request):
     return render(request, 'account.html', {
         'client': client_obj
     })
+def online(request):
+    merchandises = Merchandise.objects.all()
+    return render(request, 'all.html', {'Merchandises': merchandises})
