@@ -26,16 +26,17 @@ class Event(models.Model):
 
 class Merchandise(models.Model):
     name = models.CharField("Название", max_length=40)
-    photo = models.ImageField("Ссылка на фото",  upload_to='merch/')
+    photo = models.ImageField("Ссылка на фото", upload_to='merch/')
     size = models.CharField("Размер", max_length=10, blank=True)
     cost = models.DecimalField("Цена", max_digits=10, decimal_places=2)
     quantity = models.IntegerField("Количество")
+    merchtype = models.CharField("Тип мерча", max_length=100, null=True, blank=True)
 
     class Meta:
-        verbose_name_plural = "Мерч"    
+        verbose_name_plural = "Мерч"
 
     def __str__(self):
-        return f"{self.name}" 
+        return f"{self.name}"
 
 class Order(models.Model):
     payment_status = models.CharField("Статус оплаты", max_length=10)
