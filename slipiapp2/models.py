@@ -30,7 +30,7 @@ class Merchandise(models.Model):
     size = models.CharField("Размер", max_length=10, blank=True)
     cost = models.DecimalField("Цена", max_digits=10, decimal_places=2)
     quantity = models.IntegerField("Количество")
-    merchtype = models.CharField("Тип мерча", max_length=100, null=True, blank=True)
+    merchtype = models.CharField("Тип мерча", max_length=100,)
 
     class Meta:
         verbose_name_plural = "Мерч"
