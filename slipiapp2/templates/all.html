@@ -3,19 +3,23 @@
 <div class="main">
    <form method="get" class="form-filter">
     <select name="merchtype" class="search-input">
-        <option value="">Все товары</option>
-        <option value="Albums" {% if merchtype_filter == 'Albums' %}selected{% endif %}>Альбомы</option>
-        <option value="Clothes" {% if merchtype_filter == 'Clothes' %}selected{% endif %}>Одежда</option>
-        <option value="Accessories" {% if merchtype_filter == 'Accessories' %}selected{% endif %}>Аксессуары</option>
+        <option value="">All</option>
+        <option value="Albums" {% if merchtype_filter == 'Albums' %}selected{% endif %}>Albums</option>
+        <option value="Clothes" {% if merchtype_filter == 'Clothes' %}selected{% endif %}>Clothes</option>
+        <option value="Accessories" {% if merchtype_filter == 'Accessories' %}selected{% endif %}>Accessories</option>
     </select>
      
-    <button type="submit" class="search-button">Применить</button>
-    <a href="?" class="reset-button">Сбросить</a>
+    <button type="submit" class="search-button">Apply</button>
+    <a href="?" class="reset-button">reset</a>
 </form>
 
 <div class="merch">
     {% for merchandise in Merchandises %}
     <div class="fwo">
+        {% if merchandise.name == "POINT STAR HOCKEY JERSEY" %}
+            <a href="page.html" ACC class="merch-link">
+        {% endif %}
+        
         {% if merchandise.photo %}
             <img src="{{ merchandise.photo.url }}" alt="{{ merchandise.name }}">
         {% else %}
@@ -23,6 +27,10 @@
         {% endif %}
         <h3 class="nazvanya">{{ merchandise.name }}</h3>
         <p class="text">{{ merchandise.cost }} $</p>
+        
+        {% if merchandise.name == "POINT STAR HOCKEY JERSEY" %}
+            </a>
+        {% endif %}
     </div>
     {% empty %}
     <div class="fwo">
