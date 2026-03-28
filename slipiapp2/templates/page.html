@@ -7,6 +7,22 @@
     <title>Page</title>
 </head>
 <body>
+    <div class="country-bar">
+        <span> СТРАНА:</span>
+        <select id="countrySelect">
+            <option value="US">🇺🇸 США - $125</option>
+            <option value="CA">🇨🇦 Канада - C$170</option>
+            <option value="UK">🇬🇧 Англия - £98</option>
+            <option value="DE">🇩🇪 Германия - €115</option>
+            <option value="FR">🇫🇷 Франция - €118</option>
+            <option value="JP">🇯🇵 Япония - ¥18500</option>
+            <option value="AU">🇦🇺 Австралия - A$189</option>
+            <option value="BR">🇧🇷 Бразилия - R$649</option>
+            <option value="IN">🇮🇳 Индия - ₹9999</option>
+            <option value="MX">🇲🇽 Мексика - MX$2350</option>
+        </select>
+    </div>
+
     <header class="header">
         <div class="header-content">
              <img src="../static/media/logo.png" alt=">" class="logo">
@@ -32,16 +48,16 @@
     </div> 
     <div class="text_sboky">
         <h1 class="product_name">9 POINT STAR HOCKEY JERSEY</h1>
-        <div class="price">$125.00</div> 
+        <div class="price" id="productPrice">$125.00</div> 
         <form class="product-form">
             <div class="option-group">
                 <label class="option-label">QUANTITY</label>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
+                <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" max="10">
             </div>
             
             <div class="option-group">
                 <span class="option-label">SIZE</span>
-                <div class="size-options">
+                <div class="size-options" id="sizeOptions">
                     <label>
                         <input type="radio" name="size" class="size-input" value="M">
                         <div class="size-option">M</div>
@@ -66,7 +82,7 @@
         
         <div class="shipping-info">
             <div class="shipping-label">SHIPS ON:</div>
-            <div class="shipping-date">NOVEMBER 14, 2025</div>
+            <div class="shipping-date" id="shippingDate">NOVEMBER 14, 2025</div>
         </div>
         
         <div class="product-description">
@@ -87,5 +103,7 @@
                 <div>Refund policy</div>
             </div>
     </footer>
+
+    <script src="../static/js/paje.js"></script>
 </body>
 </html>
